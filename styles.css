@@ -1,0 +1,135 @@
+/* Global styles */
+
+* {
+    box-sizing: border-box;
+    font-family: "VAG Rounded", sans-serif;
+}
+
+#nav {
+    position: sticky; /* Make the nav stick to the top */
+    top: 0; /* Start at the very top of the page */
+    left: 0; /* Align with the left edge of the page */
+    width: 100%; /* Take up the full width of the page */
+    background-color: #124d54; /* Keep the white background */
+    padding: 10px; /* Add some padding for spacing */
+    font-size: 18px;
+    z-index: 100; /* Ensure the nav is above the main content */
+    border-radius: 15px; /* Add some curvature to the box */
+    }
+    
+  
+  /* Add a small gap between the nav and the content */
+  .content {
+    padding-top: 50px; /* Adjust this value as needed */
+}
+
+#nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto; /* This line will center the links and add a 20px gap */
+    display: table;
+}
+
+#nav li {
+    position: sticky;
+    display: table-cell;
+    padding: 20px; /* Add some space between each link */
+    font-size: 30px; /* Increase the font size */
+}
+
+.image-container img {
+    position: relative;
+    top: 25px; /* Adjust the value to match your desired position */
+    /* Remove left and transform properties */
+    text-align: center;
+    z-index: 1; /* Ensures image is behind nav and main content */
+    border-radius: 5%;
+    width: 50%;
+    height: auto;
+    display: block; /* Make sure the image is treated as a block-level element */
+    margin: 0 auto; /* Center the image horizontally within its container */
+}
+
+.image-container {
+    display: block; /* Ensure it's treated as a block-level element */
+    width: 100%; /* Adjust this as needed to fit your layout */
+    text-align: center; /* Center inline or inline-block elements within */
+}
+
+/*nav img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}*/
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 10px solid #f9744b;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    position: relative;
+    z-index: 10; /* Ensures main content is above the image but below the nav */
+
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+footer {
+    background-color: #e1d9cf;
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+
+/* Set a background color */
+body {
+    background-color: #252526;
+    color: #f5f5f5; /* Cream color text */
+    font-family: "VAG Rounded", sans-serif; /* Fallback to sans-serif if Minecraft is not available */
+}
+
+/* Add this CSS rule to your styles.css file to change the color of the copyright text */
+footer#footer {
+    color: #252526; /* Setting the color to #252526 */
+}
+
+@font-face {
+    font-family: "VAG Rounded";
+    src: url("https://db.onlinewebfonts.com/t/d4280feab480528a5c1b9c7b210e97bd.eot");
+    src: url("https://db.onlinewebfonts.com/t/d4280feab480528a5c1b9c7b210e97bd.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/d4280feab480528a5c1b9c7b210e97bd.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/d4280feab480528a5c1b9c7b210e97bd.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/d4280feab480528a5c1b9c7b210e97bd.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/d4280feab480528a5c1b9c7b210e97bd.svg#VAG Rounded")format("svg");
+}
+
+/* Set a base scale for the elements */
+.element {
+    transform: scale(1);
+    transition: transform 0.5s ease-out; /* Add a smooth animation */
+  }
+  
+  /* Scale up on hover */
+  .element:hover {
+    transform: scale(1.2); /* Adjust the scaling factor to your liking */
+  }
+
+  #nav li:hover {
+    transform: scale(1.2);
+    transition: transform 0.1s ease-out; /* Increase transition duration to 0.8 seconds */ 
+  }
+
+  nav li:not(:hover) {
+    transform: scale(1); /* Reset scaling when mouse leaves */
+    transition: transform 0.1s ease-out; /* Same duration as hover-in */
+  }
